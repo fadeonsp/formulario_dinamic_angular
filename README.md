@@ -1,27 +1,3 @@
-# FormDinamic
+Trabalhar com formulários estáticos com certeza é algo bem comum na vida de um desenvolvedor. Dois bons exemplos são os formulários de login e cadastro. Ambos não mudam com tanta frequência, ou seja, dificilmente você irá acrescentar, editar ou remover campos. Desta forma deixá-lo (formulário) fixo no código faz todo sentido.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Em outros cenários onde a frequência de atualização dos formulários é grande ou seus campos são condicionados a outros fatores, faz mais sentido partir para uma solução dinâmica. Podemos por exemplo, ler uma lista de parâmetros de uma API e criar dinamicamente um formulário ou podemos mostrar e ocultar alguns campos do formulário dependendo do perfil do usuário. Há diversas aplicações, mas neste texto quero mostrar como consultar uma API e construir um formulário dinâmico utilizando o FormBuilder.array do Angular.
